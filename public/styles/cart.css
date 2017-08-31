@@ -1,0 +1,202 @@
+.cart-warp{
+    font-size: 0.76rem;
+    color: #232323;
+    background: #f5f5f5;
+    height: -webkit-fill-available;
+    overflow: auto;
+    bottom: 3rem;
+}
+.cart-warp div{
+    overflow-y: auto;
+    bottom: 3rem;
+}
+.cart-title{
+    height: 2.95rem;
+    background: #46ae00;
+}
+.cart-title p{
+    font-size: 1rem;
+    line-height: 2.95rem;
+    text-align: center;
+    color: #ffffff;
+}
+.receive{
+    border-width: 0.7rem 0.5rem;
+    border-style: solid;
+    border-image-source: url(../images/receive-border-ing.jpg);
+    border-image-slice: 5;
+    border-image-width: auto;
+    border-image-repeat: repeat;
+    background: #fff;
+}
+.receive .more{
+    color: #46ae00;
+}
+.receive .more span{
+    font-size: 0.6rem;
+    transform: scaleY(2.5);
+    display: inline-block;
+    margin-left: 0.2rem;
+    padding-bottom: 0.02rem;
+}
+
+.paymentpage{
+    margin-top: 1rem;
+    background: #fff;
+    padding: 0.8rem 0.5rem;
+}
+.paymentpage p{
+    color: #9E9E9E;
+}
+.paymenttitile{
+    padding-left: 0.5rem;
+    border-left: #8BC34A 0.2rem solid;
+}
+.paymentpage span{
+    width: 4rem;
+    height: 1.4rem;
+    border: #F44336 1px solid;
+    border-radius: 0.7rem;
+    text-align: center;
+    font-size: 0.6rem;
+    color: #F44336;
+    line-height: 1.5rem;
+    display: block;
+    margin-left: 12.4rem;
+    margin-top: -1rem;
+}
+.uptosend{
+    margin-top: 1rem;
+}
+
+.remark{
+    margin-top: 1px;
+    background-color: #fff;
+    padding: 0.8rem 0.5rem;
+}
+.remark input{
+    width: 10rem;
+    height: 1.2rem;
+    border-radius: 0.3rem;
+    margin-left: 0.8rem;
+}
+
+.group-list{
+    margin-top: 1px;
+    background-color: #fff;
+    padding: 0.8rem 0.5rem 5.2rem 0.5rem;
+    width: 100%;
+}
+.group-list tr{}
+.group-item{
+    line-height: 1.6rem;
+}
+.group-item tr{}
+.group-item tr td{}
+.right{
+    width: 10%;
+    text-align: center;
+}
+.right input{
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.item-img{
+    width: 4rem;
+    text-align: center;
+}
+.item-img img{
+    width: 3rem;
+    height: 3rem;
+    border: bisque 1px solid;
+}
+.pro{
+    padding-left: 0.5rem;
+}
+.pro div{
+    width: 60%;
+    float: right;
+    text-align: center;
+}
+.pro div a{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    border: #f44336 1px solid;
+    color: #F44336;
+    border-radius: 0.6rem;
+}
+.pro div a i{
+}
+.proname{
+    font-weight: bold;
+}
+.price{
+    width: 40%;
+    display: inline-block;
+}
+.reduce{}
+.add{}
+
+.allcount{
+    background-color: #fff;
+    height: 2.2rem;
+    position: absolute;
+    width: 100%;
+    bottom: 3rem;
+}
+.allchose{
+    width: 20%;
+    display: inline-block;
+    padding-left: 0.8rem;
+}
+.allchose input{
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.allcount p{
+    display: inline-block;
+    line-height: 2.2rem;
+}
+.count{
+    margin-left: 1rem;
+}
+.count span{
+    color: #f34336;
+}
+.ok{
+    width: 5rem;
+    height: 2.2rem;
+    background-color: #8BC34A;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    float: right;
+    line-height: 2.2rem;
+}
+
+.cart-none{
+    text-align: center;
+    color: #9E9E9E;
+    padding: 4rem 0;
+}
+.cart-none img{
+    width: 8rem;
+}
+.cart-none p{
+    margin-top: 1rem;
+}
+.cart-none a{
+    width: 6rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    display: inline-block;
+    color: #8BC34A;
+    background-color: white;
+    border: #8BC34A 0.09rem solid;
+    border-radius: 0.4rem;
+    margin-top: 2rem;
+}

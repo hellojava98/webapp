@@ -1,0 +1,62 @@
+#top{
+    height: 2.95rem;
+    background: #46ae00;
+    color: #ffffff;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+ }
+#top a{
+    width: 2.1rem;
+    height: 2.1rem;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+}
+#top a .text-icon{
+    color: #ffffff;
+    display: block;
+    width: .4rem;
+    -webkit-transform: scaleY(2.2);
+    -moz-transform: scaleY(2.2);
+    -ms-transform: scaleY(2.2);
+}
+#top span{
+    margin-left: -2.2rem;
+}
+
+#serch{
+    height: 1.6rem;
+    padding: 0.8rem 0.7rem;
+    background: #efeeec;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+}
+#serch div{
+    height: 1.8rem;
+}
+#serch div i{
+    position: absolute;
+    font-size: 1.4rem;
+    color: #999;
+    transform: scalex(1.3) scaleY(0.95) rotate(270deg) rotateZ(30deg);
+}
+#serch div input{
+    height: 1.6rem;
+    width: 10.3rem;
+    border-radius: 0.2rem;
+    outline-style: none;
+    font-size: 0.7rem;
+    color: #999;
+    padding: 0 0.6rem 0 1.1rem;
+}
+#serch button{
+    border: 0;
+    width: 3.6rem;
+    height: 1.8rem;
+    border-radius: 0.2rem;
+    background-color: #dcdcdc;
+    color: #999;
+    font-size: 0.7rem;
+    cursor: pointer;
+}

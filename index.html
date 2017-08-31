@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no" />
+	<title>Angular项目</title>
+    <link rel="stylesheet" type="text/css" href="public/styles/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="public/styles/home.css"/>
+	<link rel="stylesheet" type="text/css" href="public/styles/footer.css"/>
+	<link rel="stylesheet" type="text/css" href="public/styles/serch.css"/>
+    <link rel="stylesheet" type="text/css" href="public/styles/market.css"/>
+	<link rel="stylesheet" type="text/css" href="public/styles/cart.css"/>
+	<link rel="stylesheet" type="text/css" href="public/styles/swiper-3.4.2.min.css"/>
+	<link rel="stylesheet" type="text/css" href="public/styles/index.css"/>
+	<script>
+		(function(){
+			var html=document.documentElement;
+			var width=html.getBoundingClientRect().width;
+			html.style.fontSize=width/18+'px';
+		})();
+	</script>
+</head>
+<body>
+<div ui-view=>    <!--ui-sref：点击包含此指令跳转-->
+</div>
+<footer id="footer">
+	<a ui-sref="home" ui-sref-active="footer_home_active" class="footer_home"></a>
+	<a ui-sref="market({type:'0'})" ui-sref-active="footer_market_active" class="footer_market"></a>
+	<a ui-sref="cart" ui-sref-active="footer_cart_active" class="footer_cart"><span class="cartNum" ng-if="cartNum">{{cartNum}}</span></a>
+	<a ui-sref="mine" ui-sref-active="footer_mine_active" class="footer_mine"></a>
+</footer>
+</body>
+<script src="./public/javascripts/jquery-3.2.1.min.js"></script>
+<script src="./public/javascripts/jquery.fly.min.js"></script>
+<script src="./public/javascripts/swiper-3.4.2.jquery.min.js"></script>
+<script src="./public/javascripts/mock.js"></script>
+<script src="./public/javascripts/angular.min.js"></script>
+<script src="./public/javascripts/angular-ui-router.js"></script>
+<script src="./app/app.js"></script>
+<script src="./app/router.js"></script>
+<script src="./app/directives/HeaderDirective.js"></script>
+<script src="./app/controllers/HomeController.js"></script>
+<script src="./app/directives/BannerDirectives.js"></script>
+<script src="./app/services/HomeService.js"></script>
+<script src="./app/controllers/MarketController.js"></script>
+<script src="./app/services/MarketService.js"></script>
+<script src="./app/controllers/CartController.js"></script>
+<script src="./app/services/CartService.js"></script>
+</html>

@@ -1,0 +1,60 @@
+<div class="cart-warp">
+    <div class="cart-title">
+        <p>购物车</p>
+    </div>
+    <div ng-if="cartNum">
+        <div class="receive">
+            <table class="addr-table" width="100%">
+                <tr>
+                    <td width="28%">收&nbsp;&nbsp;货&nbsp;&nbsp;人:</td>
+                    <td>闪电侠&nbsp;女士</td>
+                    <td width="17%" rowspan="3" class="more">修改<span>></span></td>
+                </tr>
+                <tr>
+                    <td>电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话:</td>
+                    <td>13865489563</td>
+                </tr>
+                <tr>
+                    <td>收货地址:</td>
+                    <td>宝安西乡</td>
+                </tr>
+            </table>
+        </div>
+        <div class="paymentpage">
+            <p class="paymenttitile">天天新鲜</p>
+            <span>凑单专区</span>
+            <p class="uptosend">￥0元起送，22:00前满￥30免运费</p>
+        </div>
+        <div class="remark">
+            收货备注
+            <input type="text" placeholder="可输入100字以内特殊要求内容">
+        </div>
+        <table class="group-list">
+            <tr class="group-item" ng-repeat="v in cartItems">
+                <td class="right"><input type="checkbox" ng-checked="true"></td>
+                <td class="item-img">
+                    <img ng-src="{{v.data.img}}">
+                </td>
+                <td class="pro">
+                    <p class="proname">{{v.data.name}}</p>
+                    <p class="price">{{v.data.specifics | currency:"￥"}}</p>
+                    <div>
+                        <a href="javascript:void(0)" class="reduce">-</a>
+                        <span>{{v.data.count}}</span>
+                        <a href="javascript:void(0)" class="add"><i>+</i></a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="allcount">
+            <span class="allchose"><input type="checkbox" ng-checked="true">全选</span>
+            <p class="count">共：<span>{{totalPrice()}}</span></p>
+            <p class="ok">选好了</p>
+        </div>
+    </div>
+    <div class="cart-none"  ng-if="!cartNum">
+        <img src="public/images/cartnone.png">
+        <p>亲，购物车空空的耶~</p>
+        <a>去逛逛</a>
+    </div>
+</div>

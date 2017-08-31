@@ -1,0 +1,49 @@
+<div header id="header"></div>
+
+<div class="mark_main">
+    <div class="main_left">
+        <nav>
+            <ul class="nav">
+                <li ng-class="{main_left_nav_active:type==='热销榜'}" class="main_left_nav " ng-click="changeType('热销榜')">热销榜</li>
+                <li ng-class="{main_left_nav_active:type==='天天特价'}" class="main_left_nav" ng-click="changeType('天天特价')">天天特价</li>
+                <li ng-class="{main_left_nav_active:type==='优选水果'}" class="main_left_nav" ng-click="changeType('优选水果')">优选水果</li>
+                <li ng-class="{main_left_nav_active:type==='牛奶面包'}" class="main_left_nav" ng-click="changeType('牛奶面包')">牛奶面包</li>
+                <li ng-class="{main_left_nav_active:type==='肉蛋时蔬'}" class="main_left_nav" ng-click="changeType('肉蛋时蔬')">肉蛋时蔬</li>
+                <li class="main_left_nav" ng-click="changeType('卤味熟食')">卤味熟食</li>
+                <li class="main_left_nav" ng-click="changeType('酒水饮料')">酒水饮料</li>
+                <li class="main_left_nav" ng-click="changeType('休闲零食')">休闲零食</li>
+                <li class="main_left_nav" ng-click="changeType('方便素食')">方便素食</li>
+                <li class="main_left_nav" ng-click="changeType('生活用品')">生活用品</li>
+                <li class="main_left_nav" ng-click="changeType('料油调味')">料油调味</li>
+                <li class="main_left_nav" ng-click="changeType('杂粮粗食')">杂粮粗食</li>
+                <li class="main_left_nav" ng-click="changeType('冰冻冷鲜')">冰冻冷鲜</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main_right">
+        <div class="sort">
+            <p>全部分类</p>
+            <p>综合排名</p>
+        </div>
+        <ul>
+            <li class="market_right" ng-repeat="item in marketData">
+                <div class="foodimg">
+                    <img ng-src="{{item.data.img}}">
+                </div>
+                <div class="fontinfo">
+                    <p class="g-name ui-ellipsis">{{item.data.name}}</p>
+                    <p class="active">
+                        <span class="sift bgred" ng-if="item.data.pm_desc.val.length>0">{{item.data.pm_desc.val}}</span>
+                    </p>
+                    <p class="weight ui-ellipsis">{{(item.data.price | number:2)+'g'}}</p>
+                    <p class="press ui-ellipsis">{{item.data.specifics | currency:"￥"}}</p>
+                    <p class="oldpress ui-ellipsis">{{item.data.market_price | number:2}}</p>
+                    <p class="addcart">
+                        <span class="addicon" ng-click="addToCart(item,$event)">+</span>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
